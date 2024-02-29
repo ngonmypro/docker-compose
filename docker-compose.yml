@@ -1,0 +1,16 @@
+version: '3'
+
+networks:
+  foodstory-database:
+
+services:
+  redis-stg:
+    image: redis
+    container_name: redis-test
+    restart: always
+    expose:
+      - "6379/tcp"
+    ports: 
+      - 6379:6379
+    networks: 
+      - database
