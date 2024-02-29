@@ -1,1 +1,3 @@
-# docker-compose
+# docker run redis
+
+docker-compose up --build -d
